@@ -1,0 +1,178 @@
+id,query
+Q-001,List VMs with CPU utilization above 80% in the last 1 hour
+Q-002,Which users have admin/VM operator roles on VMs
+Q-003,Show which users accessed VMs in last 30 days
+Q-004,List VMs and their owner users
+Q-005,Show VMs without Per-VM EVC configured where cross-cluster mobility is needed
+Q-006,List VM hardware version, VMware Tools status, and guest OS support flag
+Q-007,Show uptime for each VM
+Q-008,Report VMs with RDMs or mounted ISOs (migration blockers)
+Q-009,Show CPU and memory trend for VM web-prod-01 in last 24 hours
+Q-010,Give me a report of all VMs with their IP addresses
+Q-011,Show all VMs that are powered off
+Q-012,Which VMs currently have active snapshots?
+Q-013,Show me top 5 VMs by memory usage
+Q-014,List all VMs with their guest operating systems
+Q-015,List failed SSH/logins per user on hosts
+Q-016,List datastores connected to each host
+Q-017,Show network configuration for each ESXi host
+Q-018,Show ESXi hosts memory utilization
+Q-019,List which users have SSH enabled on hosts
+Q-020,Show me health status of all ESXi hosts
+Q-021,List top 3 ESXi hosts by CPU usage
+Q-022,Give me uptime report for all hosts
+Q-023,Which hosts are missing critical patches (image compliance drift)?
+Q-024,List vLCM desired image components per cluster (ESXi, vendor add-ons, firmware if exposed)
+Q-025,Which ESXi version is each host running?
+Q-026,List clusters with average memory utilization
+Q-027,List EVC mode for each cluster and max host baseline
+Q-028,Show hosts in each cluster
+Q-029,List datastores available in each cluster
+Q-030,Which clusters have HA enabled?
+Q-031,List clusters with average CPU utilization
+Q-032,How many VMs are in each cluster?
+Q-033,Show tasks/events by users in each cluster
+Q-034,Show health of all clusters
+Q-035,Which users have cluster admin or DRS/HA roles
+Q-036,vLCM image compliance drift summary by cluster
+Q-037,Report HA admission control policy and headroom
+Q-038,Show DRS status for each cluster
+Q-039,Show last 10 events in each datacenter
+Q-040,Show overall summary of each datacenter
+Q-041,List networks available in each datacenter
+Q-042,Show datastores available in each datacenter
+Q-043,List clusters inside each datacenter
+Q-044,How many ESXi hosts in each datacenter?
+Q-045,How many VMs are in each datacenter?
+Q-046,List all datacenters in my environment
+Q-047,Recent tasks or events by user in datacenter
+Q-048,List users with permissions across datacenter
+Q-049,Show overall summary of network configuration
+Q-050,List dvPortgroups with promiscuous mode, MAC changes, or forged transmits allowed
+Q-051,Show network latency/drops statistics for VMs
+Q-052,List VMs running on VLAN 100
+Q-053,Show uplink assignments for each host
+Q-054,List distributed switches in environment (with port security)
+Q-055,Show VMs with high VMXNET3 queue drops in last 1h
+Q-056,List all port groups and VLAN IDs
+Q-057,Users with network admin/port access roles
+Q-058,Find networks not in use by any VMs
+Q-059,Show vSwitch configuration for all hosts
+Q-060,Which VMs are on datastore datastore1?
+Q-061,Show overall storage summary
+Q-062,List all NFS and iSCSI datastores
+Q-063,Any datastores above 90% usage?
+Q-064,List datastore clusters and their usage
+Q-065,Show datastore latency statistics
+Q-066,List all datastores with capacity and free space
+Q-067,Show top 5 datastores by usage
+Q-068,Recent storage tasks/events by user
+Q-069,Users with access to datastores/VMs on datastores
+Q-070,Datastore capacity trend (7d) with predicted days-to-90%
+Q-071,Show thin-provisioned overcommit ratio by datastore
+Q-072,Report per-VM SPBM policy and compliance
+Q-073,vSAN cluster health summary (if vSAN present)
+Q-074,Find orphaned or zombie VMDKs not attached to any VM
+Q-075,Show firewall configuration of hosts
+Q-076,Show overall security compliance summary
+Q-077,Verify ESXi syslog target configured
+Q-078,Verify ESXi NTP servers and ntpd service state
+Q-079,Detect syslog target changes since last run (added/removed/modified)
+Q-080,Detect NTP server list or ntpd policy changes since last run
+Q-081,Locked accounts
+Q-082,List all users/groups with admin or highly-privileged roles
+Q-083,List all users and their roles
+Q-084,Show last 20 audit log events
+Q-085,Failed login attempts per user
+Q-086,Which hosts are missing security patches (non-compliant image)?
+Q-087,Report vSphere KMS configuration status and connectivity
+Q-088,List untrusted/expired CA/STS certificates in vCenter trust stores (VECS)
+Q-089,Detect changes to TLS protocol settings (1.0/1.1/1.2/1.3) since baseline
+Q-090,Report identity source (AD/LDAP) changes since last run
+Q-091,List recent VMware security advisories applied (host image components)
+Q-092,Check if hosts/vCenter allow deprecated TLS (1.0/1.1)
+Q-093,Which hosts still allow root login or SSH enabled?
+Q-094,Report SSO password and lockout policy settings
+Q-095,Report ESXi host certificate expiry < 90 days
+Q-096,Show RBAC changes since last snapshot (added/removed admins, role elevation)
+Q-097,Report SSO failed logins and lockouts in last 48h
+Q-098,List encrypted VMs and policy compliance
+Q-099,Inventory ESXi local accounts and roles (non-root)
+Q-100,Report vCenter certificates expiry (Machine SSL, STS) < 90 days
+Q-101,List alarms without email actions (who wouldn't be notified)
+Q-102,List all Scheduled Tasks and their next run times
+Q-103,Summarize completed vs failed tasks in last 48 hours
+Q-104,List alarm email actions and recipients
+Q-105,Recent snapshot creation or removal tasks
+Q-106,List VM power on/off tasks
+Q-107,Show VM migration tasks in last 7 days
+Q-108,List currently triggered alarms
+Q-109,Show last 10 vCenter tasks
+Q-110,List failed tasks in last 24 hours
+Q-111,Show tasks initiated by user admin
+Q-112,Show recent VM clone tasks
+Q-113,Show last backup job status for each protected VM
+Q-114,List VMs without backup/protection tag
+Q-115,Detect snapshots older than 72h left by backup tools
+Q-116,Show cluster EVC & per-VM EVC compatibility
+Q-117,Check vLCM image compliance per cluster
+Q-118,For migration wave-tagged VMs, flag any with snapshots
+Q-119,Find VMs with connected removable devices (ISO/floppy/USB)
+Q-120,Export DRS VM-VM affinity/anti-affinity rules (wave planning)
+Q-121,List powered-off VMs eligible for cold migration
+Q-122,Report source cluster EVC and target baseline requirements
+Q-123,List failed vMotion tasks in last 7 days with reason codes
+Q-124,Flag VMs with FT, vGPU, or passthrough that limit vMotion
+Q-125,Check SPBM policy compliance and target datastore compatibility
+Q-126,Summarize cross-vCenter migration prerequisites and posture
+Q-127,Cross-Center prerequisites: versions, Enterprise Plus license, PSC/VPN connectivity
+Q-128,Map vDS/vSS portgroup/VLAN presence between source and target
+Q-129,List VMs with VMware Tools outdated (upgrade recommended before migration)
+Q-130,Check if syslog and NTP are configured cluster-wide
+Q-131,List certificates/STS tokens expiring in next 60 days
+Q-132,List dvPortgroups with security flags (promiscuous/MAC changes/forged transmits) enabled
+Q-133,List VMs without Per-VM EVC configured where compatibility required
+Q-134,Check if VMs comply with assigned SPBM storage policies
+Q-135,List VMs with migration blockers (RDM, passthrough, vGPU, FT, ISO/linked clone)
+Q-136,Verify HA/DRS/vLCM/syslog/stats edits fail in GCVE
+Q-137,List failed logins to vCenter/SSO in the last 24 hours
+Q-138,Show accounts locked out in the last 24 hours
+Q-139,List users who have not logged in within the last 90 days
+Q-140,Report VM encryption posture (encrypted vs unencrypted)
+Q-141,Verify ESXi hosts lockdown mode status
+Q-142,List security-related vCenter alarms triggered in last 24 hours
+Q-143,Check vCenter/PSC security-related services health (STS, SSO, PSC)
+Q-144,Give me a summary by Datacenter (clusters, hosts, VMs, datastores, networks)
+Q-145,Show each cluster with host/VM counts, HA/DRS state, EVC mode
+Q-146,List all hosts with version/build, model, CPU cores, memory, connection/maintenance state
+Q-147,Give me a VM inventory with power, CPU, MemGB, HW version, guest OS, Tools status, folder, cluster, datastore
+Q-148,List datastores with type, capacity, free/provisioned, connected hosts
+Q-149,List vDS and dvPortgroups with VLAN/MTU and VM counts; flag mgmt networks
+Q-150,Show asset counts by tag/category (and drill down to objects)
+Q-151,What changed in inventory in the last 24h? (new/removed VMs & hosts; new datastores/portgroups)
+Q-152,Audit ESXi host firewall rules vs baseline
+Q-153,Verify events/audit log retention meets policy (>=90 days)
+Q-154,Report vSAN encryption / storage encryption posture per cluster
+Q-155,Verify TLS protocol/cipher strength meets policy (disable TLS 1.0/1.1)
+Q-156,Generate VM-to-target mapping from source to destination environment
+Q-157,Create migration waves from inventory (priority, dependencies, size)
+Q-158,Validate migrated VMs in target env (tools, network, datastore, power state)
+Q-159,List snapshots exceeding size/age threshold for cleanup
+Q-160,Map source datastores to candidate target datastores based on free capacity and IO profile
+Q-161,Detect networks present in source but missing in target (or VLAN mismatches)
+Q-162,Find unattached VMDKs and large unused files on datastores
+Q-163,Report VMs using RDMs or physical passthrough devices that complicate migration
+Q-164,Detect VMs with ISO/media attached that block hot migration
+Q-165,Find VMs with VMware Tools not running or outdated after migration
+Q-166,Detect VMs with encryption/storage policies not present or incompatible on target
+Q-167,Enrich migration plan with app dependency info from CMDB/admin CSVs
+Q-168,Projected to hit 90% within 7 days (linear projection over last 30 days)
+Q-169,Show RBAC changes in the last 7d (added/removed principals, role assignments, inherited vs direct)
+Q-170,Show RBAC changes in the last 30d (added/removed principals, role assignments, inherited vs direct)
+Q-171,Give a current snapshot of all RBAC principals, roles, entities (with inherited flag)
+Q-172,List users who gained admin/privileged roles in last 7 days
+Q-173,Check SSO password policy, lockout, MFA settings
+Q-174,List failed login events and affected accounts in last 24h
+Q-175,Show account lockout policy and users currently locked out
+Q-176,List users who have not logged in within the last 90 days
+Q-177,List users who have not logged in within the last 90 days

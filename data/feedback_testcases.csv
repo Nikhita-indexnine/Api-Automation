@@ -1,0 +1,6 @@
+id,thread_id,message_id,rating,comment
+M-TS1,1,1,1,Good
+M-TS2,1,1,-1,"Service slow on last operation - experienced timeouts (✓)"
+M-TS3,1,1,1,"No auth test (used to test missing JWT) - keep JWT env empty for test case"
+M-TS5,1,1,0,"Invalid rating test (should be rejected by API)"
+M-TS6,,1,1,""

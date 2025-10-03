@@ -1,0 +1,11 @@
+test_id,flow,host_name,user_name,session_token,reuse_from,expect_status,expect_valid,expect_has_access_token,expect_err_substring,notes
+HV-01,validate,vcenter.adafca79.us-east4.gve.goog,CloudOwner@gve.local,,,200,true,,,"Happy path validate"
+HV-02,validate,does-not-exist.example.com,CloudOwner@gve.local,,,404,,,,"Unknown hostname"
+HV-03,validate,"   ",CloudOwner@gve.local,,,400,,,,"Empty/whitespace hostname"
+HV-04,validate,vcenter.adafca79.us-east4.gve.goog,"   ",,,400,,,,"Empty/whitespace username"
+LG-01,validate+login,vcenter.adafca79.us-east4.gve.goog,CloudOwner@gve.local,,,200|200,true,true,,"Validate + login happy path"
+LG-02,validate+login,vcenter.adafca79.us-east4.gve.goog,OtherUser@gve.local,,,200|401,true,false,Unauthorized,"Mismatched username on login"
+LG-03,login,,,INVALID_TOKEN,,401,,false,Unauthorized,"Invalid token direct login"
+LG-04,login,,, , ,400,,false,,"Missing/empty token"
+LG-05,validate+login,vcenter.adafca79.us-east4.gve.goog,CloudOwner@gve.local,,,200|200,true,true,,"First login to obtain a consumed token"
+LG-06,login,,,,,reuse:LG-05,401,,false,Unauthorized,"Reusing consumed token should 401"

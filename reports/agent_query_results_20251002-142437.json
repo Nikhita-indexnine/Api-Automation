@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Q-001",
+    "query": "List VMs with CPU utilization above 80% in the last 1 hour",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395278.595538,
+    "date": "2025-10-02T08:54:38.596794Z"
+  },
+  {
+    "id": "Q-002",
+    "query": "Which users have admin/VM operator roles on VMs",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395279.357328,
+    "date": "2025-10-02T08:54:39.357343Z"
+  }
+]

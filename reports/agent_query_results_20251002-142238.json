@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Q-001",
+    "query": "List VMs with CPU utilization above 80% in the last 1 hour",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395159.0909457,
+    "date": "2025-10-02T08:52:39.091805Z"
+  },
+  {
+    "id": "Q-002",
+    "query": "Which users have admin/VM operator roles on VMs",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395159.8675938,
+    "date": "2025-10-02T08:52:39.867613Z"
+  },
+  {
+    "id": "Q-003",
+    "query": "Show which users accessed VMs in last 30 days",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395160.4747684,
+    "date": "2025-10-02T08:52:40.474781Z"
+  },
+  {
+    "id": "Q-004",
+    "query": "List VMs and their owner users",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395161.42381,
+    "date": "2025-10-02T08:52:41.423825Z"
+  },
+  {
+    "id": "Q-005",
+    "query": "Show VMs without Per-VM EVC configured where cross-cluster mobility is needed",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395162.1700273,
+    "date": "2025-10-02T08:52:42.170040Z"
+  },
+  {
+    "id": "Q-006",
+    "query": "List VM hardware version",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395162.7822971,
+    "date": "2025-10-02T08:52:42.782329Z"
+  },
+  {
+    "id": "Q-007",
+    "query": "Show uptime for each VM",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395163.4942193,
+    "date": "2025-10-02T08:52:43.494233Z"
+  },
+  {
+    "id": "Q-008",
+    "query": "Report VMs with RDMs or mounted ISOs (migration blockers)",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395164.7196121,
+    "date": "2025-10-02T08:52:44.719627Z"
+  },
+  {
+    "id": "Q-009",
+    "query": "Show CPU and memory trend for VM web-prod-01 in last 24 hours",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395165.672785,
+    "date": "2025-10-02T08:52:45.672799Z"
+  },
+  {
+    "id": "Q-010",
+    "query": "Give me a report of all VMs with their IP addresses",
+    "status": 500,
+    "resp_text": "",
+    "body": "{\"message\": \"An unexpected internal server error occurred. Please try again later.\", \"code\": 500, \"error_type\": \"Internal Server Error\"}",
+    "timestamp": 1759395166.9991012,
+    "date": "2025-10-02T08:52:46.999113Z"
+  }
+]
