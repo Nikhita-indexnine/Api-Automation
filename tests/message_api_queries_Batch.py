@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+This script is a batch runner designed to test the Agent strem API efficiently. It reads a list of queries from a CSV file, sends them to the /api/v1/agent/stream endpoint and streams responses,it smartly extracts the latest tool_runner output as the assistant’s final reply. The tool runs in configurable batches, includes retry and timeout handling , and logs detailed request/response info. After execution, it automatically generates timestamped JSON and CSV reports for all results and merges them into a combined report. In short, it provides a reliable, automated way to run bulk API tests, capture real assistant responses, and analyze response over multiple queries.
+
 Batching runner for agent message API queries.
 
 This version:
@@ -32,9 +34,10 @@ ENDPOINT = os.environ.get("ENDPOINT", "/api/v1/agent/stream")
 JWT = (
     "Bearer "
     "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9."
-    "eyJ1c2VyX2lkIjoxLCJvcmdhbml6YXRpb25faWQiOjEsImV4cCI6MTc1OTQ4MjQzMSwidHlwZSI6ImFjY2VzcyJ9."
-    "qzXHtac1cnTqGsiEv3VJAl8sYcQHhd9BB9U12hoIrmK82Gc713vTsolpYn_uAdWKgQDr2t_fH8uoLtbp6zKtE66-tC6x4WbD-vV29gAHbOzQ9oUTZGq9DSOAnShrA7zsELOvL5LjNzpU_hVuE7dk02cyxu7Jix7Z8bPbEI29mUy7SR0mLSD3cbx2H7JrFgcr7zdVSLYYQbBWwnJ-xplFZ1ixMvlDJ73C41ctyQdMnyXF39uUPxHBxm18uyJpBzf05MnOkMHmAQr5iT5XiBtiYCR1YysgPdrEsV5TJKWzwOLmNEu92LtTf_RBfuLQ3dnsotnLdEFeQWe6lUyy7dJI8w"
+    "eyJ1c2VyX2lkIjoxLCJvcmdhbml6YXRpb25faWQiOjEsImluZnJhX2lkIjoxLCJleHAiOjE3NTk3MzExMzcsInR5cGUiOiJhY2Nlc3MifQ."
+    "dTUS4WQV5HfN5q_mpn_e1ekt9bPneoao0ZHGXquhfRGs6kzQwIEShFHSV34jWjONM7aC1mwp-NJLcpdjMXjiyzCByROOR90zfjeaiUd8V3phm2Pl0rqmSzZwF_s0OidIi3Inh4p8c7xaxDkSfKzLtUxUTlSV5LTyKKh6vM8fZevum5CLGOfebnmHfuwkCK4Ic47Qk_ugbokBrUuaiLFPvaiNCS2ZqmQHMj13vgUD8zV-3MTyz68jngLN2aCb_isJeb3v_Dcw3JQFpxR6FOqHTQ5J2PXnMug1cOhO2FUmsXgwF3s11MUgLP1ayWRseUHqVcFl6cT9o9mLNxuT99PJHg"
 )
+
 
 # Default payload IDs (can be overridden per-row via CSV columns)
 THREAD_ID = os.environ.get("THREAD_ID", "1")
